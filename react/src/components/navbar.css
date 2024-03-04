@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #202020;
+    margin: 0;
+    margin-bottom: -20px;
+    font-family: "Arvo", serif;
+}
+
+.nombre-sitio{
+    flex: 1;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: .5rem;
+    list-style: none;
+
+}
+.navegacion a{
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
