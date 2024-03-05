@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+body{
+    margin: 0;
+}
 
 .nav{
     width: 100%;
@@ -7,8 +9,7 @@
     justify-content: space-between;
     align-items: center;
     color: #202020;
-    margin: 0;
-    margin-bottom: -20px;
+    margin: 0 0 -3px;
     font-family: "Arvo", serif;
 }
 

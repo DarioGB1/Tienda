@@ -1,5 +1,7 @@
 .container{
-    background-color: #0549b8;
-    height: 500px;
-    margin: 0;
+    background-color: #202020;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+
 }
