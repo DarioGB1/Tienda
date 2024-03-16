@@ -8,13 +8,14 @@ li {
 li {
     display: inline;
     width: 100%;
+    height: 100%;
 }
 
-img {
-    margin: -16px 0 0;
+ul img {
+    margin: 0;
     padding: 0;
     width: 100%;
-    object-fit: cover;
+    height: 100%;
 }
 .carousel-cont{
     display: flex;
@@ -23,23 +24,31 @@ img {
     width: 100%;
 }
 .main-container {
-    width: 700px;
-    height: 400px;
-    margin: auto auto;
-
+    width: 700px; /* Cambiado de 700px */
+    margin: auto;
 }
-.container-images{
+.container-images {
     width: 100%;
-    height: 100%;
     border-radius: 20px;
     border: 1px solid #eee;
     overflow: hidden;
-    object-fit: cover;
 }
 
-.container-images ul{
+.container-images ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.container-images li {
+    flex: 0 0 100%;
+}
+
+.container-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Asegura que la imagen cubra el contenedor manteniendo su relación de aspecto */
 }
 
 .slider-container{

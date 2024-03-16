@@ -9,12 +9,8 @@ export default function Carousel() {
 
     useEffect(() => {
         const listNode = listRef.current;
-        const imgNode = listNode.querySelectorAll("li > img")[currentIndex]
-        if(imgNode) {
-            imgNode.scrollIntoView({
-                behavior:"smooth"
-            })
-        }
+        listNode.style.transition = 'transform 0.5s ease-in-out'; // Ajusta la duración y la curva de la transición según tus preferencias
+        listNode.style.transform = `translateX(${-currentIndex * 100}%)`;
     }, [currentIndex]);
 
     const scrollToImage = (direction) => {
